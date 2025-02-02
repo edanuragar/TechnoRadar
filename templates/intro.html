@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #E2E0C8;
+        }
+        .intro-container {
+            text-align: center;
+        }
+        .intro-text {
+            font-size: 3em;
+            animation: fadeOut 4s ease-in-out forwards;
+            color: #818C78;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container">
+        <div class="intro-text"> TechnoRadar</div>
+        <div class="intro-text">Hoş Geldiniz!</div>
+    </div>
+    <script>
+        setTimeout(function() {
+            window.location.href = "/news";
+        }, 4000);
+    </script>
+</body>
+</html>

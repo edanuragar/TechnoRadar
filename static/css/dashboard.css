@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #A7B49E;
+    color: #E2E0C8;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Kartları daha yukarıda hizalar */
+}
+
+.btn-custom {
+    background-color: #A7B49E;
+    color: #E2E0C8;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #A7B49E;
+}
+
+.scroll-container {
+    height: 600px;
+    overflow-y: scroll;
+    padding: 0.5rem;
+    background-color: #A7B49E;
+    border: 1px solid #818C78;
+}
+
+header {
+    background-color: #A7B49E;
+    border-bottom: 2px solid #818C78;
+    padding: 1rem 0;
+}
+
+.header-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #818C78;
+}
+
+.nav-link {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #818C78;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Kartların içinde yer alacağı kapsayıcı */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Kartları ortalar */
+    padding: 1rem;
+    background-color: #A7B49E;
+}
+
+.card {
+    border: 1px solid #818C78;
+    background-color: #E2E0C8;
+    color: #818C78;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Georgia', serif;
+    margin: 0.5rem; /* Kartlar arasına boşluk ekler */
+    flex: 1 1 300px; /* Kart genişliği ayarlanabilir */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 1.25rem; /* Başlık boyutu */
+    font-weight: bold;
+    color: #818C78;
+}
+
+.card a {
+    font-size: 1rem; /* İçerik boyutu */
+    color: #818C78;
+    text-decoration: underline;
+}
+
+.user-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
